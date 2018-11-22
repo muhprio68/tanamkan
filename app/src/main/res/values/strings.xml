@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Tanamkan</string>
+    <string name="daftar">Daftar</string>
+    <string name="google">Daftar dengan Google</string>
+    <string name="akun">Sudah punya akun</string>
+    <string name="lupa_password">Lupa password ?</string>
+</resources>

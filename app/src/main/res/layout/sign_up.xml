@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:paddingLeft="16dp"
+    android:paddingRight="16dp"
+    android:background="@drawable/gradient"
+    >
+
+    <EditText
+        android:id="@+id/edtNama"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:hint="nama"
+        android:textSize="12sp"
+        android:textColorHint="@color/putih"
+        android:textColor="@color/putih"
+        android:inputType="textPersonName"/>
+    
+    <EditText
+        android:id="@+id/edtEmail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/edtNama"
+        android:hint="email"
+        android:textSize="12sp"
+        android:textColorHint="@color/putih"
+        android:textColor="@color/putih"
+        android:inputType="textEmailAddress"/>
+    
+    <EditText
+        android:id="@+id/edtTTL"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/edtEmail"
+        android:hint="tanggal lahir"
+        android:textSize="12sp"
+        android:textColorHint="@color/putih"
+        android:textColor="@color/putih"
+        android:inputType="date"/>
+    
+    <EditText
+        android:id="@+id/edtPassword"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/edtTTL"
+        android:hint="password"
+        android:textSize="12sp"
+        android:textColorHint="@color/putih"
+        android:textColor="@color/putih"
+        android:inputType="textPassword"/>
+    
+    <EditText
+        android:id="@+id/edtConfirm"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/edtPassword"
+        android:hint="konfirmasi password"
+        android:textSize="12sp"
+        android:textColorHint="@color/putih"
+        android:textColor="@color/putih"
+        android:inputType="textPassword"/>
+
+    <Button
+        android:id="@+id/btnDaftar"
+        android:layout_width="match_parent"
+        android:layout_height="32dp"
+        android:textSize="12sp"
+        android:text="@string/daftar"
+        android:layout_below="@id/edtConfirm"
+        android:background="@drawable/circle_biru"
+        android:textColor="@color/putih"
+        android:textAllCaps="false"
+        android:layout_marginTop="10dp"/>
+
+    <Button
+        android:id="@+id/btnGoogle"
+        android:layout_width="match_parent"
+        android:layout_height="32dp"
+        android:textSize="12sp"
+        android:text="@string/google"
+        android:layout_below="@id/btnDaftar"
+        android:background="@drawable/circle_putih"
+        android:textColor="@color/hitam"
+        android:textAllCaps="false"
+        android:layout_marginTop="15dp"
+        android:drawableLeft="@drawable/mbah_google"
+        android:paddingLeft="10dp"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:text="@string/akun"
+        android:textAllCaps="false"
+        android:textColor="@color/putih"
+        android:layout_marginBottom="7dp"/>
+</RelativeLayout>
