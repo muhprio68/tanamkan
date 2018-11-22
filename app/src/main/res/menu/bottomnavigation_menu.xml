@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/home_menu"
+        android:icon="@drawable/icons8_home"
+        android:title="@string/mnHome"/>
+
+    <item
+        android:id="@+id/tanaman_menu"
+        android:icon="@drawable/icons8_plant_4"
+        android:title="@string/mnTanaman"/>
+
+    <item
+        android:id="@+id/pot_menu"
+        android:icon="@drawable/icons8_sprout"
+        android:title="@string/mnPot"/>
+    <item
+        android:id="@+id/profil_menu"
+        android:icon="@drawable/icons8_user"
+        android:title="@string/mnProfil" />
+
+</menu>

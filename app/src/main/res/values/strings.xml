@@ -10,4 +10,8 @@
     <string name="tvVerifikasi">verifikasi</string>
     <string name="masukkan">masukkan kode verifikasi untuk masuk</string>
     <string name="btnVerifikasi">Verifikasi</string>
+    <string name="mnHome">home</string>
+    <string name="mnTanaman">tanaman</string>
+    <string name="mnPot">pot</string>
+    <string name="mnProfil">profil</string>
 </resources>

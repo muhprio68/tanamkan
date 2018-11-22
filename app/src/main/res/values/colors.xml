@@ -6,4 +6,10 @@
     <color name="birubutton">#33A6FF</color>
     <color name="putih">#fff</color>
     <color name="hitam">#000</color>
+
+
+    <color name="biruApp">#33A6FF</color>
+    <color name="hijauApp">#47FF97</color>
+    <color name="hijau2">#4CE9B9</color>
+    <color name="biru2">#38BFE1</color>
 </resources>
