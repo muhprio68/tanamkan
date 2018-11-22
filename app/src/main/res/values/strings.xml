@@ -4,4 +4,10 @@
     <string name="google">Daftar dengan Google</string>
     <string name="akun">Sudah punya akun</string>
     <string name="lupa_password">Lupa password ?</string>
+    <string name="kirim_kode">Kirim kode reset</string>
+    <string name="pastikan">pastikan email anda telah terdaftar</string>
+    <string name="reset">reset password</string>
+    <string name="tvVerifikasi">verifikasi</string>
+    <string name="masukkan">masukkan kode verifikasi untuk masuk</string>
+    <string name="btnVerifikasi">Verifikasi</string>
 </resources>
