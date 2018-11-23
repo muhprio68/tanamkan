@@ -10,16 +10,17 @@ import android.view.Menu;
 import android.view.MenuInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.Button;
 import android.widget.TextView;
 
 
 /**
  * A simple {@link Fragment} subclass.
  */
-public class TanamanFragment extends Fragment {
+public class EditProfilFragment extends Fragment {
 
 
-    public TanamanFragment() {
+    public EditProfilFragment() {
         // Required empty public constructor
     }
 
@@ -28,11 +29,11 @@ public class TanamanFragment extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
-        View view = inflater.inflate(R.layout.fragment_tanaman, container, false);
-        Toolbar toolbar = (Toolbar) view.findViewById(R.id.tanamanToolbar);
+        View view = inflater.inflate(R.layout.fragment_edit_profil, container, false);
+        Toolbar toolbar = (Toolbar) view.findViewById(R.id.editProfilToolbar);
         ((AppCompatActivity)getActivity()).setSupportActionBar(toolbar);
         ((AppCompatActivity)getActivity()).getSupportActionBar().setDisplayShowTitleEnabled(false);
-        TextView mTitle = (TextView) toolbar.findViewById(R.id.tanamanTitle);
+        TextView mTitle = (TextView) toolbar.findViewById(R.id.editProfilTitle);
         return view;
     }
     @Override
@@ -43,6 +44,5 @@ public class TanamanFragment extends Fragment {
 
     public void onCreateOptionsMenu(Menu menu, MenuInflater inflater) {
         super.onCreateOptionsMenu(menu, inflater);
-        inflater.inflate(R.menu.iconbar_menu, menu);
     }
 }

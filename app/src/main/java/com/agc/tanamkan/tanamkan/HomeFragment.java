@@ -32,7 +32,7 @@ public class HomeFragment extends Fragment {
         Toolbar toolbar = (Toolbar) view.findViewById(R.id.homeToolbar);
         ((AppCompatActivity)getActivity()).setSupportActionBar(toolbar);
         ((AppCompatActivity)getActivity()).getSupportActionBar().setDisplayShowTitleEnabled(false);
-        TextView mTitle = (TextView) toolbar.findViewById(R.id.tbTitle);
+        TextView mTitle = (TextView) toolbar.findViewById(R.id.homeTitle);
         return view;
     }
     @Override
