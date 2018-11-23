@@ -2,11 +2,10 @@
 <resources>
     <color name="colorPrimary">#3F51B5</color>
     <color name="colorPrimaryDark">#47FF97</color>
-    <color name="colorAccent">#FF4081</color>
+    <color name="colorAccent">#33A6FF</color>
     <color name="birubutton">#33A6FF</color>
     <color name="putih">#fff</color>
     <color name="hitam">#000</color>
-
 
     <color name="biruApp">#33A6FF</color>
     <color name="hijauApp">#47FF97</color>
