@@ -2,21 +2,21 @@
 <menu xmlns:android="http://schemas.android.com/apk/res/android">
     <item
         android:id="@+id/home_menu"
-        android:icon="@drawable/icons8_home"
+        android:icon="@drawable/ic_home_hijau"
         android:title="@string/mnHome"/>
 
     <item
         android:id="@+id/tanaman_menu"
-        android:icon="@drawable/icons8_plant_4"
+        android:icon="@drawable/ic_plant_hijau"
         android:title="@string/mnTanaman"/>
 
     <item
         android:id="@+id/pot_menu"
-        android:icon="@drawable/icons8_sprout"
+        android:icon="@drawable/ic_sprout_hijau"
         android:title="@string/mnPot"/>
     <item
         android:id="@+id/profil_menu"
-        android:icon="@drawable/icons8_user"
+        android:icon="@drawable/ic_user_hijau"
         android:title="@string/mnProfil" />
 
 </menu>

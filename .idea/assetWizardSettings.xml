@@ -35,9 +35,11 @@
                           <map>
                             <entry key="assetSourceType" value="FILE" />
                             <entry key="color" value="ffffff" />
-                            <entry key="outputName" value="add" />
+                            <entry key="height" value="48" />
+                            <entry key="outputName" value="ic_user_hijau" />
                             <entry key="overrideSize" value="true" />
-                            <entry key="sourceFile" value="C:\Users\Prio\Downloads\icons8-plus.svg" />
+                            <entry key="sourceFile" value="C:\Users\Prio\Documents\user_hijau.svg" />
+                            <entry key="width" value="48" />
                           </map>
                         </option>
                       </PersistentState>
