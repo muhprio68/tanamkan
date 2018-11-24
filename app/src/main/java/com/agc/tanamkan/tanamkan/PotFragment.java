@@ -1,6 +1,7 @@
 package com.agc.tanamkan.tanamkan;
 
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.design.widget.FloatingActionButton;
 import android.support.v4.app.Fragment;
@@ -38,7 +39,8 @@ public class PotFragment extends Fragment {
         flButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                loadFragment(new TambahPotFragment());
+                Intent in = new Intent(getActivity(),TambahPotActivity.class);
+                startActivity(in);
             }
         });
         return view;
@@ -52,14 +54,5 @@ public class PotFragment extends Fragment {
     public void onCreateOptionsMenu(Menu menu, MenuInflater inflater) {
         super.onCreateOptionsMenu(menu, inflater);
         inflater.inflate(R.menu.iconbar_menu, menu);
-    }
-    private boolean loadFragment(Fragment fragment) {
-        if (fragment != null) {
-            ((AppCompatActivity)getActivity()).getSupportFragmentManager().beginTransaction()
-                    .replace(R.id.fl_container, fragment)
-                    .commit();
-            return true;
-        }
-        return false;
     }
 }

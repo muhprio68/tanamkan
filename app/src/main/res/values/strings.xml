@@ -36,7 +36,11 @@
     <string name="tanaman3">Cabai Rawit</string>
     <string name="tanaman4">Jahe</string>
     <string name="tanaman5">Bougenville</string>
+    <string name="selesai">Selesai</string>
+    <string name="batal">Batal</string>
     <string-array name="letak">
         <item>letak pot</item>
     </string-array>
+    <string name="title_activity_tambah_tanaman">tambah tanaman</string>
+    <string name="title_activity_tambah_pot">TambahPotActivity</string>
 </resources>

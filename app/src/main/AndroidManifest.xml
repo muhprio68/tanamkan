@@ -16,6 +16,24 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity
+            android:name=".TambahTanamanActivity"
+            android:label="@string/title_activity_tambah_tanaman"
+            android:parentActivityName=".MainActivity"
+            android:theme="@style/AppTheme">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.agc.tanamkan.tanamkan.MainActivity" />
+        </activity>
+        <activity
+            android:name=".TambahPotActivity"
+            android:label="@string/title_activity_tambah_pot"
+            android:parentActivityName=".MainActivity"
+            android:theme="@style/AppTheme">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.agc.tanamkan.tanamkan.MainActivity" />
+        </activity>
     </application>
 
 </manifest>

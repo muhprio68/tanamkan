@@ -1,6 +1,7 @@
 package com.agc.tanamkan.tanamkan;
 
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
 import android.support.v7.widget.CardView;
@@ -41,7 +42,8 @@ public class HomeFragment extends Fragment {
         cvTambah.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                loadFragment(new TambahTanamanFragment());
+                Intent in = new Intent(getActivity(),TambahTanamanActivity.class);
+                startActivity(in);
             }
         });
         return view;
@@ -54,14 +56,5 @@ public class HomeFragment extends Fragment {
 
     public void onCreateOptionsMenu(Menu menu, MenuInflater inflater) {
         super.onCreateOptionsMenu(menu, inflater);
-    }
-    private boolean loadFragment(Fragment fragment) {
-        if (fragment != null) {
-            ((AppCompatActivity)getActivity()).getSupportFragmentManager().beginTransaction()
-                    .replace(R.id.fl_container, fragment)
-                    .commit();
-            return true;
-        }
-        return false;
     }
 }
