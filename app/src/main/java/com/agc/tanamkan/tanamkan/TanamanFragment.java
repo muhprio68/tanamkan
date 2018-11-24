@@ -2,6 +2,7 @@ package com.agc.tanamkan.tanamkan;
 
 
 import android.os.Bundle;
+import android.support.design.widget.FloatingActionButton;
 import android.support.v4.app.Fragment;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
@@ -33,6 +34,13 @@ public class TanamanFragment extends Fragment {
         ((AppCompatActivity)getActivity()).setSupportActionBar(toolbar);
         ((AppCompatActivity)getActivity()).getSupportActionBar().setDisplayShowTitleEnabled(false);
         TextView mTitle = (TextView) toolbar.findViewById(R.id.tanamanTitle);
+        FloatingActionButton flButton = (FloatingActionButton) view.findViewById(R.id.flButtonTambahTanaman);
+        flButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                loadFragment(new TambahTanamanFragment());
+            }
+        });
         return view;
     }
     @Override
@@ -44,5 +52,14 @@ public class TanamanFragment extends Fragment {
     public void onCreateOptionsMenu(Menu menu, MenuInflater inflater) {
         super.onCreateOptionsMenu(menu, inflater);
         inflater.inflate(R.menu.iconbar_menu, menu);
+    }
+    private boolean loadFragment(Fragment fragment) {
+        if (fragment != null) {
+            ((AppCompatActivity)getActivity()).getSupportFragmentManager().beginTransaction()
+                    .replace(R.id.fl_container, fragment)
+                    .commit();
+            return true;
+        }
+        return false;
     }
 }

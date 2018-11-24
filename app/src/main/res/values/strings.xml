@@ -26,4 +26,12 @@
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
     <string name="ganti_foto_profil">Ganti foto profil</string>
+    <string name="tambah_tanaman">tambah tanaman</string>
+    <string name="konfirmasi">Konfirmasi</string>
+    <string name="ambil_foto_tanaman">Ambil foto tanaman</string>
+    <string name="tambah_pot">tambah pot</string>
+    <string name="ambil_foto_pot">Ambil foto pot</string>
+    <string-array name="letak">
+        <item>letak pot</item>
+    </string-array>
 </resources>
