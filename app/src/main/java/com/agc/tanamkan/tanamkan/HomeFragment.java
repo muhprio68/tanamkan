@@ -46,6 +46,12 @@ public class HomeFragment extends Fragment {
                 startActivity(in);
             }
         });
+        mCircle.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                loadFragment(new ProfilFragment());
+            }
+        });
         return view;
     }
     @Override
@@ -56,5 +62,14 @@ public class HomeFragment extends Fragment {
 
     public void onCreateOptionsMenu(Menu menu, MenuInflater inflater) {
         super.onCreateOptionsMenu(menu, inflater);
+    }
+    private boolean loadFragment(Fragment fragment) {
+        if (fragment != null) {
+            ((AppCompatActivity)getActivity()).getSupportFragmentManager().beginTransaction()
+                    .replace(R.id.fl_container, fragment)
+                    .commit();
+            return true;
+        }
+        return false;
     }
 }
