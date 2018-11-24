@@ -23,7 +23,7 @@
                                 <PersistentState>
                                   <option name="values">
                                     <map>
-                                      <entry key="url" value="jar:file:/C:/Program%20Files/Android/Android%20Studio/plugins/android/lib/android.jar!/images/material_design_icons/content/ic_add_black_24dp.xml" />
+                                      <entry key="url" value="jar:file:/C:/Program%20Files/Android/Android%20Studio/plugins/android/lib/android.jar!/images/material_design_icons/navigation/ic_more_horiz_black_24dp.xml" />
                                     </map>
                                   </option>
                                 </PersistentState>
@@ -33,13 +33,12 @@
                         </option>
                         <option name="values">
                           <map>
-                            <entry key="assetSourceType" value="FILE" />
                             <entry key="color" value="ffffff" />
-                            <entry key="height" value="48" />
-                            <entry key="outputName" value="ic_menu_putih" />
+                            <entry key="height" value="50" />
+                            <entry key="outputName" value="ic_more_putih" />
                             <entry key="overrideSize" value="true" />
-                            <entry key="sourceFile" value="C:\Users\Prio\Documents\menu_putih.svg" />
-                            <entry key="width" value="48" />
+                            <entry key="sourceFile" value="C:\Users\Prio\Documents\more_putih.svg" />
+                            <entry key="width" value="50" />
                           </map>
                         </option>
                       </PersistentState>

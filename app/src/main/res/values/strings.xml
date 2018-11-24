@@ -31,6 +31,11 @@
     <string name="ambil_foto_tanaman">Ambil foto tanaman</string>
     <string name="tambah_pot">tambah pot</string>
     <string name="ambil_foto_pot">Ambil foto pot</string>
+    <string name="tanaman1">Mawar</string>
+    <string name="tanaman2">Melati</string>
+    <string name="tanaman3">Cabai Rawit</string>
+    <string name="tanaman4">Jahe</string>
+    <string name="tanaman5">Bougenville</string>
     <string-array name="letak">
         <item>letak pot</item>
     </string-array>

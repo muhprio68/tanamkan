@@ -3,6 +3,7 @@ package com.agc.tanamkan.tanamkan;
 
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
+import android.support.v7.widget.CardView;
 import android.support.v7.widget.Toolbar;
 import android.support.v7.app.AppCompatActivity;
 import android.view.LayoutInflater;
@@ -11,6 +12,8 @@ import android.view.MenuInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.TextView;
+
+import de.hdodenhof.circleimageview.CircleImageView;
 
 
 /**
@@ -33,6 +36,14 @@ public class HomeFragment extends Fragment {
         ((AppCompatActivity)getActivity()).setSupportActionBar(toolbar);
         ((AppCompatActivity)getActivity()).getSupportActionBar().setDisplayShowTitleEnabled(false);
         TextView mTitle = (TextView) toolbar.findViewById(R.id.homeTitle);
+        CircleImageView mCircle = (CircleImageView) toolbar.findViewById(R.id.circleFoto);
+        CardView cvTambah = (CardView) view.findViewById(R.id.cvTambah);
+        cvTambah.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                loadFragment(new TambahTanamanFragment());
+            }
+        });
         return view;
     }
     @Override
@@ -43,6 +54,14 @@ public class HomeFragment extends Fragment {
 
     public void onCreateOptionsMenu(Menu menu, MenuInflater inflater) {
         super.onCreateOptionsMenu(menu, inflater);
-        inflater.inflate(R.menu.homebar_menu, menu);
+    }
+    private boolean loadFragment(Fragment fragment) {
+        if (fragment != null) {
+            ((AppCompatActivity)getActivity()).getSupportFragmentManager().beginTransaction()
+                    .replace(R.id.fl_container, fragment)
+                    .commit();
+            return true;
+        }
+        return false;
     }
 }
