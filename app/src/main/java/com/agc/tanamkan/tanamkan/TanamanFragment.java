@@ -12,6 +12,7 @@ import android.view.Menu;
 import android.view.MenuInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.ImageView;
 import android.widget.TextView;
 
 
@@ -35,6 +36,7 @@ public class TanamanFragment extends Fragment {
         ((AppCompatActivity)getActivity()).setSupportActionBar(toolbar);
         ((AppCompatActivity)getActivity()).getSupportActionBar().setDisplayShowTitleEnabled(false);
         TextView mTitle = (TextView) toolbar.findViewById(R.id.tanamanTitle);
+        ImageView ivMore1 = (ImageView) view.findViewById(R.id.ivMore1);
         FloatingActionButton flButton = (FloatingActionButton) view.findViewById(R.id.flButtonTambahTanaman);
         flButton.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -43,7 +45,14 @@ public class TanamanFragment extends Fragment {
                 startActivity(in);
             }
         });
-        return view;
+        ivMore1.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent in = new Intent(getActivity(),PerkembanganPertumbuhanActivity.class);
+                startActivity(in);
+            }
+        });
+      return view;
     }
     @Override
     public void onCreate(Bundle savedInstanceState) {

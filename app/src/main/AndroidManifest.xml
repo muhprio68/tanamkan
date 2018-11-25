@@ -34,6 +34,15 @@
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value="com.agc.tanamkan.tanamkan.MainActivity" />
         </activity>
+        <activity
+            android:name=".PerkembanganPertumbuhanActivity"
+            android:label="@string/title_activity_perkembangan_pertumbuhan"
+            android:parentActivityName=".MainActivity"
+            android:theme="@style/AppTheme">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.agc.tanamkan.tanamkan.MainActivity" />
+        </activity>
     </application>
 
 </manifest>

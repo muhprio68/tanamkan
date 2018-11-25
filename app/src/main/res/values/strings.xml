@@ -43,4 +43,6 @@
     </string-array>
     <string name="title_activity_tambah_tanaman">tambah tanaman</string>
     <string name="title_activity_tambah_pot">TambahPotActivity</string>
+    <string name="title_activity_perkembangan_pertumbuhan">PerkembanganPertumbuhanActivity</string>
+    <string name="perkembangan_pertumbuhan"><![CDATA[perkembangan & pertumbuhan]]></string>
 </resources>
